@@ -1,0 +1,60 @@
+---
+Entradas: 
+IN=1;
+
+---
+Salidas: 
+Rojo=1;
+Verde=1;
+Amarillo=1;
+Pasar_Persona=1;
+
+---
+Estados: 
+S0=0;
+S1=1;
+S2=2;
+S3=3;
+S4=4;
+
+---
+Condiciones: 
+Actual=S0;
+Siguiente=S1;
+Condiciones=[0];
+
+Actual=S0;
+Siguiente=S3;
+Condiciones=[1];
+
+Actual=S1;
+Siguiente=S2;
+Condiciones=[0];
+
+Actual=S1;
+Siguiente=S3;
+Condiciones=[1];
+
+Actual=S2;
+Siguiente=S0;
+Condiciones=[0];
+
+Actual=S2;
+Siguiente=S3;
+Condiciones=[1];
+
+Actual=S3;
+Siguiente=S4;
+Condiciones=['X'];
+
+Actual=S4;
+Siguiente=S0;
+Condiciones=['X'];
+
+---
+Valores_Salidas: 
+S0=[1, 0, 0, 0];
+S1=[0, 0, 1, 0];
+S2=[0, 1, 0, 0];
+S3=[1, 0, 0, 1];
+S4=[1, 0, 1, 0];
