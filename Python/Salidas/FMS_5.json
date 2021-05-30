@@ -1,0 +1,171 @@
+{
+     "Entradas": [
+          {
+               "IN": "1"
+          }
+     ],
+     "Salidas": [
+          {
+               "Rojo": "1"
+          },
+          {
+               "Verde": "1"
+          },
+          {
+               "Amarillo": "1"
+          },
+          {
+               "Pasar_Persona": "1"
+          }
+     ],
+     "Estados": [
+          {
+               "0": "S0"
+          },
+          {
+               "1": "S1"
+          },
+          {
+               "2": "S2"
+          },
+          {
+               "3": "S3"
+          },
+          {
+               "4": "S4"
+          }
+     ],
+     "Transiciones": [
+          {
+               "S1": [
+                    "S2",
+                    "S3"
+               ]
+          },
+          {
+               "S2": [
+                    "S0",
+                    "S3"
+               ]
+          },
+          {
+               "S3": [
+                    "S4",
+                    NaN
+               ]
+          },
+          {
+               "S4": [
+                    "S0",
+                    NaN
+               ]
+          }
+     ],
+     "Condiciones": [
+          {
+               "0": [
+                    {
+                         "EstadoActual": "S0"
+                    },
+                    {
+                         "EstadoSiguiente": "S3"
+                    },
+                    {
+                         "Condiciones": [
+                              "1"
+                         ]
+                    }
+               ]
+          },
+          {
+               "1": [
+                    {
+                         "EstadoActual": "S1"
+                    },
+                    {
+                         "EstadoSiguiente": "S2"
+                    },
+                    {
+                         "Condiciones": [
+                              "0"
+                         ]
+                    }
+               ]
+          },
+          {
+               "2": [
+                    {
+                         "EstadoActual": "S1"
+                    },
+                    {
+                         "EstadoSiguiente": "S3"
+                    },
+                    {
+                         "Condiciones": [
+                              "1"
+                         ]
+                    }
+               ]
+          },
+          {
+               "3": [
+                    {
+                         "EstadoActual": "S2"
+                    },
+                    {
+                         "EstadoSiguiente": "S0"
+                    },
+                    {
+                         "Condiciones": [
+                              "0"
+                         ]
+                    }
+               ]
+          },
+          {
+               "4": [
+                    {
+                         "EstadoActual": "S2"
+                    },
+                    {
+                         "EstadoSiguiente": "S3"
+                    },
+                    {
+                         "Condiciones": [
+                              "1"
+                         ]
+                    }
+               ]
+          },
+          {
+               "5": [
+                    {
+                         "EstadoActual": "S3"
+                    },
+                    {
+                         "EstadoSiguiente": "S4"
+                    },
+                    {
+                         "Condiciones": [
+                              "X"
+                         ]
+                    }
+               ]
+          },
+          {
+               "6": [
+                    {
+                         "EstadoActual": "S4"
+                    },
+                    {
+                         "EstadoSiguiente": "S0"
+                    },
+                    {
+                         "Condiciones": [
+                              "X"
+                         ]
+                    }
+               ]
+          }
+     ]
+}

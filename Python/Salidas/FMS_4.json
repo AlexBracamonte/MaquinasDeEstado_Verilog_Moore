@@ -1,0 +1,75 @@
+{
+     "Entradas": [
+          {
+               "IN": "1"
+          }
+     ],
+     "Salidas": [
+          {
+               "Led": "1"
+          }
+     ],
+     "Estados": [
+          {
+               "0": "Apagado"
+          },
+          {
+               "1": "Encendido"
+          }
+     ],
+     "Transiciones": [
+          {
+               "Apagado": [
+                    "Apagado",
+                    "Encendido"
+               ]
+          }
+     ],
+     "Condiciones": [
+          {
+               "0": [
+                    {
+                         "EstadoActual": "Encendido"
+                    },
+                    {
+                         "EstadoSiguiente": "Apagado"
+                    },
+                    {
+                         "Condiciones": [
+                              "0"
+                         ]
+                    }
+               ]
+          },
+          {
+               "1": [
+                    {
+                         "EstadoActual": "Apagado"
+                    },
+                    {
+                         "EstadoSiguiente": "Encendido"
+                    },
+                    {
+                         "Condiciones": [
+                              "1"
+                         ]
+                    }
+               ]
+          },
+          {
+               "2": [
+                    {
+                         "EstadoActual": "Apagado"
+                    },
+                    {
+                         "EstadoSiguiente": "Apagado"
+                    },
+                    {
+                         "Condiciones": [
+                              "0"
+                         ]
+                    }
+               ]
+          }
+     ]
+}

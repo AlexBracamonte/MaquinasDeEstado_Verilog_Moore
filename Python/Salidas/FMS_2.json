@@ -1,0 +1,108 @@
+{
+     "Entradas": [
+          {
+               "X": "1"
+          }
+     ],
+     "Salidas": [
+          {
+               "outp": "1"
+          }
+     ],
+     "Estados": [
+          {
+               "0": "S1"
+          },
+          {
+               "1": "S2"
+          },
+          {
+               "2": "S3"
+          },
+          {
+               "3": "S4"
+          }
+     ],
+     "Transiciones": [
+          {
+               "S2": [
+                    "S4",
+                    NaN
+               ]
+          },
+          {
+               "S3": [
+                    "S4",
+                    NaN
+               ]
+          },
+          {
+               "S4": [
+                    "S1",
+                    NaN
+               ]
+          }
+     ],
+     "Condiciones": [
+          {
+               "0": [
+                    {
+                         "EstadoActual": "S1"
+                    },
+                    {
+                         "EstadoSiguiente": "S2"
+                    },
+                    {
+                         "Condiciones": [
+                              "1"
+                         ]
+                    }
+               ]
+          },
+          {
+               "1": [
+                    {
+                         "EstadoActual": "S2"
+                    },
+                    {
+                         "EstadoSiguiente": "S4"
+                    },
+                    {
+                         "Condiciones": [
+                              "X"
+                         ]
+                    }
+               ]
+          },
+          {
+               "2": [
+                    {
+                         "EstadoActual": "S3"
+                    },
+                    {
+                         "EstadoSiguiente": "S4"
+                    },
+                    {
+                         "Condiciones": [
+                              "X"
+                         ]
+                    }
+               ]
+          },
+          {
+               "3": [
+                    {
+                         "EstadoActual": "S4"
+                    },
+                    {
+                         "EstadoSiguiente": "S1"
+                    },
+                    {
+                         "Condiciones": [
+                              "X"
+                         ]
+                    }
+               ]
+          }
+     ]
+}

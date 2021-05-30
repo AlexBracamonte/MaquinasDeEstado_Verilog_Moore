@@ -1,0 +1,153 @@
+{
+     "Entradas": [
+          {
+               "IN": "1"
+          }
+     ],
+     "Salidas": [
+          {
+               "Out_1": "1"
+          }
+     ],
+     "Estados": [
+          {
+               "0": "A"
+          },
+          {
+               "1": "B"
+          },
+          {
+               "2": "C"
+          },
+          {
+               "3": "D"
+          }
+     ],
+     "Transiciones": [
+          {
+               "B": [
+                    "B",
+                    "C"
+               ]
+          },
+          {
+               "C": [
+                    "A",
+                    "D"
+               ]
+          },
+          {
+               "D": [
+                    "B",
+                    "C"
+               ]
+          }
+     ],
+     "Condiciones": [
+          {
+               "0": [
+                    {
+                         "EstadoActual": "A"
+                    },
+                    {
+                         "EstadoSiguiente": "B"
+                    },
+                    {
+                         "Condiciones": [
+                              "1"
+                         ]
+                    }
+               ]
+          },
+          {
+               "1": [
+                    {
+                         "EstadoActual": "B"
+                    },
+                    {
+                         "EstadoSiguiente": "B"
+                    },
+                    {
+                         "Condiciones": [
+                              "1"
+                         ]
+                    }
+               ]
+          },
+          {
+               "2": [
+                    {
+                         "EstadoActual": "B"
+                    },
+                    {
+                         "EstadoSiguiente": "C"
+                    },
+                    {
+                         "Condiciones": [
+                              "0"
+                         ]
+                    }
+               ]
+          },
+          {
+               "3": [
+                    {
+                         "EstadoActual": "C"
+                    },
+                    {
+                         "EstadoSiguiente": "A"
+                    },
+                    {
+                         "Condiciones": [
+                              "0"
+                         ]
+                    }
+               ]
+          },
+          {
+               "4": [
+                    {
+                         "EstadoActual": "C"
+                    },
+                    {
+                         "EstadoSiguiente": "D"
+                    },
+                    {
+                         "Condiciones": [
+                              "1"
+                         ]
+                    }
+               ]
+          },
+          {
+               "5": [
+                    {
+                         "EstadoActual": "D"
+                    },
+                    {
+                         "EstadoSiguiente": "C"
+                    },
+                    {
+                         "Condiciones": [
+                              "0"
+                         ]
+                    }
+               ]
+          },
+          {
+               "6": [
+                    {
+                         "EstadoActual": "D"
+                    },
+                    {
+                         "EstadoSiguiente": "B"
+                    },
+                    {
+                         "Condiciones": [
+                              "1"
+                         ]
+                    }
+               ]
+          }
+     ]
+}

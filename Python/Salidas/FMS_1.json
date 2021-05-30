@@ -1,0 +1,164 @@
+{
+     "Entradas": [],
+     "Salidas": [
+          {
+               "output": "3"
+          }
+     ],
+     "Estados": [
+          {
+               "0": "S0"
+          },
+          {
+               "1": "S1"
+          },
+          {
+               "2": "S2"
+          },
+          {
+               "3": "S3"
+          },
+          {
+               "4": "S4"
+          },
+          {
+               "5": "S5"
+          },
+          {
+               "6": "S6"
+          },
+          {
+               "7": "S7"
+          }
+     ],
+     "Transiciones": [
+          {
+               "S1": [
+                    "S2"
+               ]
+          },
+          {
+               "S2": [
+                    "S3"
+               ]
+          },
+          {
+               "S3": [
+                    "S4"
+               ]
+          },
+          {
+               "S4": [
+                    "S5"
+               ]
+          },
+          {
+               "S5": [
+                    "S6"
+               ]
+          },
+          {
+               "S6": [
+                    "S7"
+               ]
+          },
+          {
+               "S7": [
+                    "S0"
+               ]
+          }
+     ],
+     "Condiciones": [
+          {
+               "0": [
+                    {
+                         "EstadoActual": "S1"
+                    },
+                    {
+                         "EstadoSiguiente": "S2"
+                    },
+                    {
+                         "Condiciones": []
+                    }
+               ]
+          },
+          {
+               "1": [
+                    {
+                         "EstadoActual": "S2"
+                    },
+                    {
+                         "EstadoSiguiente": "S3"
+                    },
+                    {
+                         "Condiciones": []
+                    }
+               ]
+          },
+          {
+               "2": [
+                    {
+                         "EstadoActual": "S3"
+                    },
+                    {
+                         "EstadoSiguiente": "S4"
+                    },
+                    {
+                         "Condiciones": []
+                    }
+               ]
+          },
+          {
+               "3": [
+                    {
+                         "EstadoActual": "S4"
+                    },
+                    {
+                         "EstadoSiguiente": "S5"
+                    },
+                    {
+                         "Condiciones": []
+                    }
+               ]
+          },
+          {
+               "4": [
+                    {
+                         "EstadoActual": "S5"
+                    },
+                    {
+                         "EstadoSiguiente": "S6"
+                    },
+                    {
+                         "Condiciones": []
+                    }
+               ]
+          },
+          {
+               "5": [
+                    {
+                         "EstadoActual": "S6"
+                    },
+                    {
+                         "EstadoSiguiente": "S7"
+                    },
+                    {
+                         "Condiciones": []
+                    }
+               ]
+          },
+          {
+               "6": [
+                    {
+                         "EstadoActual": "S7"
+                    },
+                    {
+                         "EstadoSiguiente": "S0"
+                    },
+                    {
+                         "Condiciones": []
+                    }
+               ]
+          }
+     ]
+}
